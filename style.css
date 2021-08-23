@@ -135,6 +135,7 @@ main {
     100%;
   padding: 1em;
   border-radius: 30px;
+  min-width: 400px;
 }
 
 .weather-details {
@@ -146,4 +147,5 @@ main {
 .degrees {
   font-size: 60px;
   width: 160px;
+  white-space: nowrap;
 }
