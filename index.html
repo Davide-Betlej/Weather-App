@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App! :)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body onload="defaultSearch('Bielsko-Biała')">
+    <header class="top-bar">
+      <div class="appName">
+        <img class="logo" src="cloudy.png" alt="app logo" />
+        <h1 class="weatherApp">Weather App!</h1>
+      </div>
+      <div class="searchDiv">
+        <form>
+          <input type="text" class="searchBar" placeholder="Enter a city..." />
+          <button id="submitButton">
+            <i class="fa fa-search"></i>
+          </button>
+          <br />
+          <span class="errorMsg">No matching location found!</span>
+        </form>
+      </div>
+
+      <div class="celFar">
+        <button class="tempButton">°C/°F</button>
+      </div>
+    </header>
+    <main>
+      <div class="info-container">
+        <div class="weather-info-container">
+          <div class="general-info">
+            <p class="condition"></p>
+            <h1 id="location"></h1>
+            <p class="degrees"></p>
+            <div class="weather-details">
+              <p class="feels-like"></p>
+              <p class="humidity"></p>
+              <p class="wind"></p>
+              <p class="pressure"></p>
+            </div>
+          </div>
+        </div>
+        <div id="loading-container"><div id="loading"></div></div>
+      </div>
+    </main>
+  </body>
+</html>
